@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HireView — L'ATS pensé pour les PME</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#" class="nav__logo"><img src="logo.svg" alt="HireView" height="40" /></a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#features">Fonctionnalités</a>
+        <a href="#how">Comment ça marche</a>
+        <a href="#founder">À propos</a>
+      </nav>
+      <a href="#contact" class="btn btn--outline nav__demo">Demander une démo</a>
+      <div class="lang-switch">
+        <a href="index.html" class="lang-switch__btn lang-switch__btn--active" title="Français">
+          <img src="https://flagcdn.com/w40/fr.png" width="24" height="16" alt="Français" />
+        </a>
+        <a href="index-en.html" class="lang-switch__btn" title="English">
+          <img src="https://flagcdn.com/w40/gb.png" width="24" height="16" alt="English" />
+        </a>
+      </div>
+      <a href="#contact" class="btn btn--primary nav__cta">Nous contacter</a>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#features" class="mobile-menu__link">Fonctionnalités</a>
+    <a href="#how" class="mobile-menu__link">Comment ça marche</a>
+    <a href="#contact" class="mobile-menu__link">Demander une démo</a>
+    <a href="#contact" class="btn btn--primary mobile-menu__cta">Nous contacter</a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__badge">ATS conçu pour les PME</div>
+        <h1 class="hero__title">Recrutez mieux,<br/>sans vous noyer<br/>dans les CV.</h1>
+        <p class="hero__sub">HireView centralise vos candidatures, automatise le suivi et accompagne chaque candidat jusqu'à l'embauche — en moins de 5 minutes de prise en main.</p>
+        <div class="hero__actions">
+          <a href="#how" class="btn btn--ghost btn--lg">Voir comment ça marche</a>
+        </div>
+      </div>
+      <div class="hero__bg"></div>
+    </section>
+
+    <!-- TECH -->
+    <section class="tech" id="tech">
+      <div class="container">
+        <p class="section__eyebrow">Technologie</p>
+        <h2 class="section__title">Construit pour durer,<br/>Conçu pour performer.</h2>
+        <p class="tech__intro">HireView repose sur une architecture moderne, robuste et évolutive, conçue pour répondre aux exigences des PME en croissance. L'interface utilisateur est développée avec <strong>React.js</strong>, garantissant une expérience fluide et réactive sur tous les appareils. Le backend s'appuie sur <strong>Node.js</strong> et <strong>Express</strong>, offrant de hautes performances pour gérer des volumes importants de candidatures. Les données sont stockées et sécurisées dans une base de données relationnelle <strong>PostgreSQL</strong>, reconnue pour sa fiabilité et sa robustesse. L'authentification des utilisateurs est entièrement sécurisée, assurant une connexion protégée et une gestion fine des accès. Enfin, l'hébergement repose sur une infrastructure cloud haute disponibilité, garantissant une scalabilité adaptée à la croissance de votre équipe.</p>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="benefits">
+      <div class="container">
+        <h2 class="section__title">Les avantages d'un système<br/>De suivi des candidatures</h2>
+        <div class="benefits__grid">
+          <div class="benefits__item">
+            <div class="benefits__icon">
+              <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="30" cy="12" r="8" fill="#f97316"/>
+                <circle cx="12" cy="44" r="7" fill="#fb923c"/>
+                <circle cx="30" cy="44" r="7" fill="#fb923c"/>
+                <circle cx="48" cy="44" r="7" fill="#fb923c"/>
+                <line x1="30" y1="20" x2="12" y2="37" stroke="#f97316" stroke-width="2.5"/>
+                <line x1="30" y1="20" x2="30" y2="37" stroke="#f97316" stroke-width="2.5"/>
+                <line x1="30" y1="20" x2="48" y2="37" stroke="#f97316" stroke-width="2.5"/>
+              </svg>
+            </div>
+            <p>Publier des offres<br/>sur plusieurs sources</p>
+          </div>
+          <div class="benefits__item">
+            <div class="benefits__icon">
+              <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="8" width="32" height="40" rx="4" stroke="#f97316" stroke-width="2.5" fill="none"/>
+                <circle cx="38" cy="38" r="10" fill="#fff" stroke="#f97316" stroke-width="2.5"/>
+                <circle cx="38" cy="38" r="5" fill="#f97316"/>
+                <line x1="45" y1="45" x2="52" y2="52" stroke="#f97316" stroke-width="3" stroke-linecap="round"/>
+                <line x1="18" y1="20" x2="30" y2="20" stroke="#fb923c" stroke-width="2" stroke-linecap="round"/>
+                <line x1="18" y1="27" x2="26" y2="27" stroke="#fb923c" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <p>Présélectionner et qualifier<br/>les candidats</p>
+          </div>
+          <div class="benefits__item">
+            <div class="benefits__icon">
+              <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="30" width="12" height="22" rx="2" fill="#fb923c"/>
+                <rect x="24" y="20" width="12" height="32" rx="2" fill="#f97316"/>
+                <rect x="40" y="10" width="12" height="42" rx="2" fill="#ea580c"/>
+                <polygon points="10,18 20,10 28,16" fill="#f97316" opacity="0.6"/>
+                <circle cx="10" cy="18" r="3" fill="#f97316"/>
+                <circle cx="20" cy="10" r="3" fill="#f97316"/>
+                <circle cx="28" cy="16" r="3" fill="#f97316"/>
+              </svg>
+            </div>
+            <p>Classement et suivi<br/>des candidats</p>
+          </div>
+          <div class="benefits__item">
+            <div class="benefits__icon">
+              <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="14" width="28" height="10" rx="5" stroke="#f97316" stroke-width="2.5" fill="none"/>
+                <rect x="6" y="30" width="28" height="10" rx="5" stroke="#f97316" stroke-width="2.5" fill="none"/>
+                <rect x="6" y="46" width="28" height="10" rx="5" stroke="#f97316" stroke-width="2.5" fill="none"/>
+                <circle cx="10" cy="19" r="3" fill="#f97316"/>
+                <circle cx="10" cy="35" r="3" fill="#f97316"/>
+                <circle cx="10" cy="51" r="3" fill="#f97316"/>
+                <path d="M34 19 Q44 19 44 27 Q44 35 34 35" stroke="#fb923c" stroke-width="2" fill="none"/>
+                <path d="M34 35 Q44 35 44 43 Q44 51 34 51" stroke="#fb923c" stroke-width="2" fill="none"/>
+              </svg>
+            </div>
+            <p>Suivi du workflow<br/>de bout en bout</p>
+          </div>
+          <div class="benefits__item">
+            <div class="benefits__icon">
+              <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="6" width="36" height="46" rx="4" stroke="#f97316" stroke-width="2.5" fill="none"/>
+                <rect x="14" y="28" width="6" height="16" rx="1" fill="#f97316"/>
+                <rect x="23" y="22" width="6" height="22" rx="1" fill="#fb923c"/>
+                <rect x="32" y="16" width="6" height="28" rx="1" fill="#ea580c"/>
+                <line x1="14" y1="46" x2="40" y2="46" stroke="#f97316" stroke-width="1.5"/>
+                <path d="M8 52 Q22 52 26 56 Q30 60 44 52" stroke="#fb923c" stroke-width="1.5" fill="none" stroke-dasharray="3,2"/>
+              </svg>
+            </div>
+            <p>Capacités de reporting<br/>avancées</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAIN POINTS -->
+    <section class="pain">
+      <div class="container">
+        <p class="section__eyebrow">Le quotidien sans HireView</p>
+        <h2 class="section__title">Recruter dans une PME,<br/>C'est un vrai défi.</h2>
+        <div class="pain__grid">
+          <div class="pain__card">
+            <div class="pain__icon">📬</div>
+            <h3>CV éparpillés partout</h3>
+            <p>Emails, LinkedIn, Indeed… impossible de savoir où en est chaque candidat.</p>
+          </div>
+          <div class="pain__card">
+            <div class="pain__icon">⏳</div>
+            <h3>Relances oubliées</h3>
+            <p>Des candidats qualifiés s'évaporent faute d'un suivi rigoureux.</p>
+          </div>
+          <div class="pain__card">
+            <div class="pain__icon">🤯</div>
+            <h3>Outils trop complexes</h3>
+            <p>Les ATS du marché sont conçus pour les grandes entreprises, pas pour vous.</p>
+          </div>
+          <div class="pain__card">
+            <div class="pain__icon">💸</div>
+            <h3>Coût du turnover élevé</h3>
+            <p>Un mauvais recrutement coûte en moyenne 20 000 € à une PME.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features">
+      <div class="container">
+        <p class="section__eyebrow">Ce que HireView change</p>
+        <h2 class="section__title">Tout ce dont vous avez besoin,<br/>Rien de superflu.</h2>
+        <div class="features__grid">
+          <div class="feature__card">
+            <div class="feature__icon">🗂️</div>
+            <h3>Pipeline visuel</h3>
+            <p>Visualisez chaque candidat à chaque étape : Nouveau, En cours, Entretien, Offre, Embauché.</p>
+          </div>
+          <div class="feature__card">
+            <div class="feature__icon">📢</div>
+            <h3>Multidiffusion d'offres</h3>
+            <p>Publiez vos offres sur Indeed, LinkedIn et votre site en un seul clic.</p>
+          </div>
+          <div class="feature__card">
+            <div class="feature__icon">✉️</div>
+            <h3>Emails automatiques</h3>
+            <p>Accusés de réception, relances, refus — envoyés sans effort de votre part.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how" id="how">
+      <div class="container">
+        <p class="section__eyebrow">Simple par design</p>
+        <h2 class="section__title">Opérationnel en 3 étapes.</h2>
+        <div class="how__steps">
+          <div class="how__step">
+            <div class="how__number">01</div>
+            <div class="how__content">
+              <h3>Créez votre offre</h3>
+              <p>Rédigez votre fiche de poste et diffusez-la en un clic sur les principales plateformes.</p>
+            </div>
+          </div>
+          <div class="how__connector"></div>
+          <div class="how__step">
+            <div class="how__number">02</div>
+            <div class="how__content">
+              <h3>Gérez les candidatures</h3>
+              <p>Toutes les candidatures arrivent dans HireView. Faites avancer les meilleurs profils en glissant-déposant.</p>
+            </div>
+          </div>
+          <div class="how__connector"></div>
+          <div class="how__step">
+            <div class="how__number">03</div>
+            <div class="how__content">
+              <h3>Embauchez le bon profil</h3>
+              <p>Générez la lettre d'offre, envoyez-la et accueillez votre nouvelle recrue dans les meilleures conditions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- RGPD -->
+    <section class="rgpd">
+      <div class="container">
+        <p class="section__eyebrow">Conformité & Sécurité</p>
+        <h2 class="section__title">HireView est conforme<br/>Au RGPD.</h2>
+        <p class="rgpd__intro">La protection des données personnelles est au cœur de HireView. Notre plateforme est entièrement conçue pour respecter le Règlement Général sur la Protection des Données (RGPD), en vigueur dans l'Union Européenne depuis mai 2018.</p>
+        <div class="rgpd__grid">
+          <div class="rgpd__card">
+            <div class="rgpd__icon">🔒</div>
+            <h3>Données hébergées en Europe</h3>
+            <p>Toutes les données de vos candidats sont stockées sur des serveurs situés en Union Européenne, conformément aux exigences du RGPD.</p>
+          </div>
+          <div class="rgpd__card">
+            <div class="rgpd__icon">✅</div>
+            <h3>Consentement explicite</h3>
+            <p>Les candidats sont informés de l'utilisation de leurs données et donnent leur consentement explicite à chaque étape du processus de recrutement.</p>
+          </div>
+          <div class="rgpd__card">
+            <div class="rgpd__icon">🗑️</div>
+            <h3>Droit à l'effacement</h3>
+            <p>Chaque candidat peut demander la suppression de ses données à tout moment. HireView garantit une suppression complète et définitive sous 72h.</p>
+          </div>
+          <div class="rgpd__card">
+            <div class="rgpd__icon">📁</div>
+            <h3>Accès & portabilité</h3>
+            <p>Les candidats peuvent accéder à leurs données, les modifier ou les exporter à tout moment, conformément à leurs droits RGPD.</p>
+          </div>
+          <div class="rgpd__card">
+            <div class="rgpd__icon">🛡️</div>
+            <h3>Chiffrement des données</h3>
+            <p>Toutes les données sont chiffrées en transit (TLS) et au repos, garantissant une protection maximale contre les accès non autorisés.</p>
+          </div>
+          <div class="rgpd__card">
+            <div class="rgpd__icon">📋</div>
+            <h3>Registre des traitements</h3>
+            <p>HireView met à disposition un registre des activités de traitement pour vous aider à respecter vos obligations en tant que responsable de traitement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact__header">
+          <p class="section__eyebrow">Contact</p>
+          <h2 class="section__title">Une question ? Parlons-en.</h2>
+          <p class="contact__sub">Ryad vous répond personnellement sous 24h.</p>
+        </div>
+        <form class="contact__form" action="https://formsubmit.co/contact@hireview-ats.com" method="POST">
+          <div class="form__row">
+            <div class="form__group">
+              <input type="text" name="name" placeholder="👤  Votre nom" required />
+            </div>
+            <div class="form__group">
+              <input type="email" name="email" placeholder="✉️  Votre email" required />
+            </div>
+          </div>
+          <div class="form__group">
+            <input type="text" name="company" placeholder="🏢  Votre entreprise" />
+          </div>
+          <div class="form__group">
+            <textarea name="message" rows="5" placeholder="💬  Décrivez votre besoin..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full contact__submit">Envoyer →</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOUNDER -->
+    <section class="founder" id="founder">
+      <div class="container founder__inner">
+        <div class="founder__avatar"><img src="ryad.jpg.jpg" alt="Ryad Tourab" /></div>
+        <div class="founder__content">
+          <p class="section__eyebrow">Le mot du Managing Partner</p>
+          <h2 class="founder__name">Ryad Tourab</h2>
+          <p class="founder__title">Managing Partner de HireView · Expert en Talent Acquisition</p>
+          <p class="founder__bio">Fort de plus de 20 ans d'expérience en ressources humaines au Moyen-Orient, en Europe et en Amérique du Nord, j'ai eu le privilège d'accompagner certaines des organisations les plus reconnues au monde : <strong>Sanofi, GE Healthcare, MSD/Merck, Accenture, PwC, CIBC</strong> et la <strong>Bourse de Toronto</strong>. Mon parcours couvre de nombreux secteurs : pharmaceutique, technologies de santé, services financiers, énergie, télécommunications et services professionnels. En tant que HR Business Partner et expert en acquisition de talents, j'ai piloté des projets de recrutement d'envergure et des implémentations d'ATS pour des entreprises internationales opérant en EMEA et au-delà. Bilingue français-anglais, avec une connaissance approfondie du droit du travail français et des pratiques de recrutement nord-américaines. J'ai créé HireView avec une conviction : les PME méritent des outils aussi puissants que ceux utilisés par les grandes entreprises — conçus par quelqu'un qui les a tous utilisés.</p>
+          <ul class="founder__creds-list">
+            <li>🎓 <strong>MBA HR Management</strong> — Studi (attendu 2026)</li>
+            <li>🎓 <strong>Post-Graduation en RH</strong> — Université de Toronto</li>
+            <li>🎓 <strong>Master en Management des Ressources Humaines</strong> — CESI</li>
+            <li>📜 <strong>Coach Professionnel Certifié</strong> — PNL International</li>
+          </ul>
+          <a href="https://www.linkedin.com/in/ryad-t-6988889" target="_blank" rel="noopener" class="founder__linkedin">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            Voir le profil LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__bottom container">
+      <p>© 2026 HireView. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
