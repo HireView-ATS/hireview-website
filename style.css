@@ -1005,9 +1005,22 @@ a { text-decoration: none; color: inherit; }
     flex-direction: column;
     text-align: center;
     align-items: center;
+    gap: 24px;
   }
-  .founder__bio { max-width: 100%; }
+  .founder__avatar {
+    width: 120px;
+    height: 120px;
+  }
+  .founder__name { font-size: 1.4rem; }
+  .founder__title { font-size: 0.82rem; }
+  .founder__bio {
+    max-width: 100%;
+    font-size: 0.88rem;
+    text-align: left;
+  }
   .founder__credentials { grid-template-columns: 1fr; }
+  .founder__creds-list { align-items: flex-start; text-align: left; }
+  .founder__creds-list li { font-size: 0.82rem; }
   .founder__linkedin { margin: 0 auto; }
 }
 
